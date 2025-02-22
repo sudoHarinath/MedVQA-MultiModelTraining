@@ -1,4 +1,4 @@
-# 🏥 Medical Visual Question Answering (VQA) with IDEFICS & LLaVA
+# 🏥 MedVQA-MultiModelTraining
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue) ![LLM](https://img.shields.io/badge/LLM-Multimodal-green) ![Kaggle](https://img.shields.io/badge/Kaggle-Training-blue)
 
