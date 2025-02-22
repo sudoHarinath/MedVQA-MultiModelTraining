@@ -1,20 +1,19 @@
 # 🏥 Medical Visual Question Answering (VQA) with IDEFICS & LLaVA
 
-![Python](https://img.shields.io/badge/Python-3.x-blue) ![Flask](https://img.shields.io/badge/Flask-Backend-red) ![LLM](https://img.shields.io/badge/LLM-Multimodal-green)
+![Python](https://img.shields.io/badge/Python-3.x-blue) ![LLM](https://img.shields.io/badge/LLM-Multimodal-green) ![Kaggle](https://img.shields.io/badge/Kaggle-Training-blue)
 
 A **Medical Visual Question Answering (VQA) system** using **fine-tuned IDEFICS and LLaVA models** to answer questions based on medical images. 
 
 ## 🚀 Features
 - 🏥 Fine-tuned **IDEFICS** and **LLaVA** models for medical VQA
 - 🎯 Achieved **42% accuracy** with IDEFICS and **38% accuracy** with LLaVA
-- 💬 Interactive chat interface for medical image-based Q&A
-- ⚡ Flask-based API for model inference
+- 💻 Trained on **Kaggle using a P100 GPU**
+- 📂 Provides **pre-trained models** for inference
 
 ## 📑 Table of Contents
 - [Tech Stack](#-tech-stack)
-- [Installation](#-installation)
+- [Training Process](#-training-process)
 - [Usage](#-usage)
-- [API Endpoints](#-api-endpoints)
 - [Demo](#-demo)
 - [Contributing](#-contributing)
 - [License](#-license)
@@ -22,62 +21,23 @@ A **Medical Visual Question Answering (VQA) system** using **fine-tuned IDEFICS 
 
 ## 🛠 Tech Stack
 - **Model:** IDEFICS & LLaVA (fine-tuned for medical VQA)
-- **Backend:** Flask (Python)
-- **Frontend:** MERN (MongoDB, Express, React, Node.js)
+- **Training Environment:** Kaggle (P100 GPU)
+- **Dataset:** PathVQA
 
-## ⚙️ Installation
-### Prerequisites
-- Python 3
-- Node.js & npm
-- Flask
-- CUDA-enabled GPU (for faster inference)
-
-### Backend Setup
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
-   cd your-repo-name/backend
-   ```
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Run the Flask server:
-   ```bash
-   python app.py
-   ```
-
-### Frontend Setup
-1. Navigate to the frontend directory:
-   ```bash
-   cd frontend
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Start the React application:
-   ```bash
-   npm start
-   ```
+## 🎓 Training Process
+1. **Dataset Preparation:** Loaded and preprocessed the **PathVQA** dataset.
+2. **Model Fine-Tuning:**
+   - Trained **IDEFICS** and **LLaVA** separately.
+   - Used **Kaggle's P100 GPU** for computation.
+   - Achieved **42% accuracy** on IDEFICS and **38% accuracy** on LLaVA.
+3. **Model Saving:** Exported trained models for inference.
 
 ## 🎯 Usage
-1. Upload a **medical image**.
-2. Ask a question related to the image.
-3. Receive AI-generated answers based on the trained models.
-
-## 🌐 API Endpoints
-### Predict Medical Answer
-```bash
-POST /predict
-```
-#### Example Usage
-```bash
-curl -X POST -F "image=@path/to/image.jpg" -F "question=What is in the X-ray?" http://127.0.0.1:5000/predict
-```
+- The trained models can be used for **medical image-based question answering**.
+- Simply load the models and pass medical images with corresponding questions for predictions.
 
 ## 📸 Demo
-![Medical VQA Chatbot UI](path_to_screenshot.png)
+![Medical VQA Model Output](path_to_screenshot.png)
 
 ## 🤝 Contributing
 Contributions are welcome! Open an issue or submit a pull request to improve the project.
@@ -86,7 +46,8 @@ Contributions are welcome! Open an issue or submit a pull request to improve the
 This project is open-source under the MIT License.
 
 ## 👤 Author
-Developed by [Your Name] for advancing **medical AI research**.
+Developed by Hari nath for advancing **medical AI research**.
 
 ---
 🔥 If you like this project, give it a ⭐ on GitHub! 🚀
+
